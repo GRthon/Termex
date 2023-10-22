@@ -20,7 +20,6 @@ from telethon.errors import (
     SessionPasswordNeededError,
     PasswordHashInvalidError,
 )
-#حقوق سورس بيثون
 
 @Client.on_message(filters.private & ~filters.forwarded & filters.command("generate"))
 async def main(_, msg):
@@ -29,8 +28,8 @@ async def main(_, msg):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("بايروجرام", callback_data="pyrogram"),
-                    InlineKeyboardButton("تيليثون", callback_data="telethon"),
+                    InlineKeyboardButton("بايـروجـرام", callback_data="pyrogram"),
+                    InlineKeyboardButton("تيلـيثـون", callback_data="telethon"),
                 ]
             ]
         ),
@@ -165,7 +164,7 @@ async def generate_session(bot, msg, telethon=False):
         pass
     await client.disconnect()
     await phone_code_msg.reply(
-        "{} 𝗚𝗥  session . \n\n تم  ارسال الكود تاكد من الرسائل المحفوظة Dev:  @G_Rthon  \n\n".format(
+        "{} 𝗚𝗥  session . \n\n تم  ارسال الكود تاكد من الرسائل المحفوظة  \n\n".format(
             "تيـليـثون" if telethon else "بايـروجـرام"
         )
     )
