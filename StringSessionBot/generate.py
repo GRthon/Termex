@@ -155,7 +155,7 @@ async def generate_session(bot, msg, telethon=False):
         string_session = client.session.save()
     else:
         string_session = await client.export_session_string()
-    text = "{} 𝗚𝗥  session  \n\n`{}` \n\n ملاحظه : لا تشارك هذا الكواد الى الأشخاص غير الثقة Dev:  @G_Rthon".format(
+    text = "{} كود سيشن \n\n`{}` \n\n ملاحظه : لا تشارك هذا الكواد الى الأشخاص غير الثقة Dev:  @G_Rthon".format(
 "تيـليـثون" if telethon else "بايـروجـرام", string_session
     )
     try:
@@ -164,7 +164,7 @@ async def generate_session(bot, msg, telethon=False):
         pass
     await client.disconnect()
     await phone_code_msg.reply(
-        "{} 𝗚𝗥  session . \n\n تم  ارسال الكود تاكد من الرسائل المحفوظة  \n\n".format(
+        "{} كود سيشن \n\n تم  ارسال الكود تاكد من الرسائل المحفوظة  \n\n".format(
             "تيـليـثون" if telethon else "بايـروجـرام"
         )
     )
