@@ -1,0 +1,57 @@
+{
+  "name": "استخراج كود تيليثون او بايروجرام",
+  "description": "انشاء جلسة كود تيليثون او بايروجرام",
+  "logo": "https://graph.org/file/b1be229cc66558e53baeb.jpg",
+  "keywords": [
+    "telebot",
+    "telegram",
+    "bot",
+    "python",
+    "pyrogram"
+  ],
+    "buildpacks": [{
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "Eco"
+    }
+  },
+  "addons": [
+      {
+         "options": {
+            "version": "12"
+         },
+         "plan": "heroku-postgresql"
+      }
+   ],
+  "repository": "https://github.com/GRthon/termix",
+  "env": {
+    "ENVIRONMENT": {
+      "description": "لا تغير شيء",
+      "required": true,
+      "value": "ANYTHING"
+    },
+    "API_ID": {
+      "description": "ايبي ايدي",
+      "required": true,
+      "value": "25294189"
+    },
+    "API_HASH": {
+      "description": "ايبي هاش",
+      "required": true,
+      "value": "8de3ed11c9c59772d1af761155e48dd3"
+    },
+    "BOT_TOKEN": {
+      "description": "توكن البوت",
+      "required": true,
+      "value": "6591731080:AAEmsL1gE0yOlrUp7I_XJXlgoOIC4srM1oo"
+    },
+    "MUST_JOIN": {
+      "description": "يوزر القناة",
+      "required": false,
+      "value": "@G_Rthon"
+    }
+  }
+}
